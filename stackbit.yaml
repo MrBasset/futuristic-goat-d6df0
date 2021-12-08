@@ -6,6 +6,8 @@ assets:
   referenceType: static
   assetsDir: cloudinary
   uploadDir: images
+  staticDir: public
+  publicPath: /
 pagesDir: src/pages
 pageLayoutKey: template
 objectTypeKey: type
