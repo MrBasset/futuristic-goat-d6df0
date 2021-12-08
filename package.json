@@ -1,48 +1,47 @@
 {
-    "name": "startup-nextjs-theme",
-    "version": "0.1.0",
-    "engines": {
-        "node": ">=14 <16",
-        "npm": "~6"
-    },
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build && next export",
-        "start": "next start",
-        "export": "next export",
-        "analyze": "ANALYZE=true next build",
-        "analyze:server": "BUNDLE_ANALYZE=server next build",
-        "analyze:browser": "BUNDLE_ANALYZE=browser next build"
-    },
-    "dependencies": {
-        "@stackbit/cli": "^0.1.14",
-        "@stackbit/components": "^0.1.56",
-        "axios": "^0.18.0",
-        "classnames": "^2.3.1",
-        "jose": "^3.14.3",
-        "markdown-to-jsx": "^7.1.3",
-        "next": "^11.1.2",
-        "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "sourcebit": "^0.11.0",
-        "sourcebit-source-filesystem": "^0.1.6",
-        "sourcebit-target-next": "^0.7.1",
-        "tailwindcss": "^2.2.4"
-    },
-    "devDependencies": {
-        "@next/bundle-analyzer": "^11.1.2",
-        "autoprefixer": "^10.2.6",
-        "eslint": "^7.29.0",
-        "eslint-config-next": "^11.0.1",
-        "eslint-config-prettier": "^8.3.0",
-        "postcss": "^8.3.5",
-        "postcss-import": "^14.0.2",
-        "postcss-nested": "^5.0.6",
-        "prettier": "^2.3.2",
-        "sass": "^1.40.0",
-        "webpack-bundle-analyzer": "^4.4.2"
-    },
-    "description": "A Nextjs page builder, component library and data source mapper all in one.",
-    "main": "next.config.js",
-    "license": "MIT"
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^3.14.2",
+    "gatsby-plugin-image": "^1.14.1",
+    "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-offline": "^4.14.0",
+    "gatsby-plugin-react-helmet": "^4.14.0",
+    "gatsby-plugin-sharp": "^3.14.1",
+    "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-transformer-remark": "4.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.4.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "workspaces": [
+    "plugins/*"
+  ]
 }

@@ -1,25 +1,19 @@
 stackbitVersion: ~0.4.0
-ssgName: nextjs
-nodeVersion: '14'
+ssgName: gatsby
+nodeVersion: 16
 cmsName: git
-assets:
+assets: 
   referenceType: static
-  staticDir: public
+  assetsDir: cloudinary
   uploadDir: images
-  publicPath: /
-dataDir: content/data
-pagesDir: content/pages
-pageLayoutKey: layout
+pagesDir: src/pages
+pageLayoutKey: template
 objectTypeKey: type
-styleObjectModelName: ThemeStyle
+buildCommand: gatsby build
+devCommand: gatsby develop
+publishDir: public
 contentModels:
-  PageLayout:
+  home:
     isPage: true
     urlPath: '/{slug}'
     newFilePath: '{slug}.md'
-  PostLayout:
-    isPage: true
-    urlPath: '/blog/{slug}'
-    newFilePath: 'blog/{slug}.md'
-  Person:
-    newFilePath: 'team/{slug}.json'
