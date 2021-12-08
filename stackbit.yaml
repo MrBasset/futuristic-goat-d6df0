@@ -12,7 +12,7 @@ pagesDir: src/pages
 pageLayoutKey: template
 objectTypeKey: type
 buildCommand: gatsby build
-devCommand: gatsby develop
+devCommand: gatsby develop -H 127.0.0.1
 publishDir: public
 contentModels:
   home:
